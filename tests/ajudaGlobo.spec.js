@@ -7,5 +7,6 @@ test('teste teste', async ({ page }) => {
   await page.getByPlaceholder('Exemplo: Como alterar minha').press('Enter');
   await page.getByText('artigo teste vsiibilidade').click();
   expect(page.locator("//html/body/div[3]/div[1]/div/div[3]/div/div[1]/c-d2c_central_ajuda_article_detail/div/div[1]/h1").isVisible());
+  expect(page.locator("//html/body/div[3]/div[1]/div/div[3]/div/div[1]/c-d2c_central_ajuda_article_detail/div/div[1]/h1").isVisible());
   
 });
